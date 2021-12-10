@@ -1,0 +1,121 @@
+.work__inner{
+    margin: 0 8%;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.work__title{
+    text-align: center;
+    font-family: 'Merriweather', serif;
+}
+
+.work__title span{
+    color: #7B46D2;
+}
+
+.work__text{
+    margin-bottom: 40px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
+    margin-bottom: 40px;
+}
+
+.card{
+    width: 33.33333333%;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    margin-right: 20px;
+}
+
+.card:last-child{
+    margin-right: 0;
+}
+
+.card__image{
+    position: relative;
+    height: 270px;
+    overflow: hidden;
+}
+
+.img{
+    width: 100%;
+}
+
+.card__content{
+    padding: 15px;
+}
+
+.card__title{
+    font-family: 'Merriweather', serif;
+}
+
+.card__text{
+    font-weight: 300;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.card__buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card__button{
+    font-size: 16px;
+    color: #333;
+}
+
+.icon{
+    margin-right: 4px;
+}
+
+.cta{
+    width: 170px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.cta.secondary{
+    background: none;
+    border: 2px solid #7B46D2;
+}
+  
+.cta.secondary:hover{
+    background: #7B46D2;
+    color: #F3F3F3;
+}
+
+@media screen and (max-width: 936px){
+    .cards{
+        flex-wrap: wrap;
+    }
+
+    .card{
+        width: 49%;
+        margin-right: 0;
+    }
+
+    .card:last-child{
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+
+@media screen and (max-width: 556px){
+    .card{
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .card:last-child{
+        margin-bottom: 0;
+    }
+}

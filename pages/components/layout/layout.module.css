@@ -1,0 +1,32 @@
+.shape1{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1050px !important;
+    z-index: -2;
+}
+
+.main {
+    min-height: 100vh;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  
+@media screen and (max-width: 1160px){
+    .shape1{
+        width: 1000px;
+}
+}
+  
+@media screen and (max-width: 800px){
+    .shape1{
+      display: none;
+}
+}
+  
+  
+  
+  

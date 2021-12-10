@@ -1,0 +1,201 @@
+.contact{
+    background:#3F3352;
+}
+
+.contact__inner{
+    margin: 0 8%;
+    padding: 50px 0;
+    display: flex;
+    border-bottom: 1px solid rgba(242, 242, 242, .5);
+}
+
+.contact__details{
+    width: 60%;
+    height: 100%;
+}
+
+.contact__title{
+    font-family: 'Assistant', sans-serif;
+    font-size: 36px;
+    color: #F3F3F3;
+}
+
+.contact__title span{
+    color: #7B46D2;
+}
+
+.contact__details p{
+    margin: 10px 0;
+    width: 82%;
+    color: #F3F3F3;
+}
+
+.socials{
+    display: flex;
+}
+
+.social{
+    margin-left: 14px;
+    border: 2px solid #7B46D2;
+    width: 38px;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.social:first-child{
+    margin-left: 0;
+}
+
+.social:hover{
+    border: 2px solid #F3F3F3;
+}
+
+.social i{
+    color: #7B46D2;
+}
+
+.social:hover i{
+    color: #F3F3F3;
+}
+
+.contact__form{
+    height: 100%;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 480px;
+}
+
+.name, .email{
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    margin-bottom: 10px;
+    outline: none;
+    border: 2px solid #7B46D2;
+    font-family: 'Lato', sans-serif;
+}
+
+.message{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    outline: none;
+    border: 2px solid #7B46D2;
+    resize: none;
+    font-family: 'Lato', sans-serif;
+}
+
+.cta{
+    width: 170px;
+    height: 50px;
+    cursor: pointer;
+    margin-left: auto;
+}
+  
+.cta.primary{
+    position: relative;
+    background: #7B46D2;
+    color: #F3F3F3;
+    border: none;
+}
+  
+.cta.primary:hover{
+    background: #9874D2;
+    transition: 0.6s;
+}
+
+.popout{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.popout__inner{
+    position: relative;
+    background: #F3F3F3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.popout__icon{
+    font-size: 76px;
+    color: #7B46D2;
+    margin-bottom: 20px;
+}
+
+.popout__inner .line{
+    width: 60%;
+    height: 1px;
+    background: #7B46D2;
+    margin-bottom: 20px;
+}
+
+.popout__inner p{
+    color: #7B46D2;
+    font-size: 18px;
+    text-align: center;
+}
+
+.popout__inner button{
+    width: 66px;
+    height: 40px;
+    background: #7B46D2;
+    border: none;
+    color: #F3F3F3;
+    margin-top: 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.popout__inner button:hover{
+    background: #9874D2;
+    transition: 0.5s;
+}
+
+
+@media screen and (max-width: 936px){
+    .contact__inner{
+        flex-direction: column;
+    }
+
+    .contact__details, .contact__form{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact__details{
+        margin-bottom: 30px;
+    }
+
+    .contact__details p{
+        text-align: center;
+    }
+
+    .contact__form .form{
+        width: 100%;
+    }
+
+    .contact__form button{
+        margin-right: auto;
+    }
+}
